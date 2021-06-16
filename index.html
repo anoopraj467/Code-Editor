@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="editor-menu">
+      <button type="button" class="btn btn-dark" name="button">Dark Mode</button>
+      <button type="button" class="btn btn-light" name="button">Light Mode</button>
+      <button type="button" class="btn btn-run" name="button"><i class="fa fa-play">Run</i></button>
+      <div class="live">
+        <label for="live">Live</label>
+        <input type="checkbox" id="live" value="">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="editor" contenteditable="">
+          Write your code....
+        </div>
+        </div>
+        <div class="bar" title="Click and Drag">
+        </div>
+      <div class="right">
+        <iframe src="" frameborder="0" class="iframe"></iframe>
+      </div>
+      </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
